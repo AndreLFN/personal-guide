@@ -1,5 +1,5 @@
-# NOME
-NOME oferece serviços de suporte a personal trainers, focando em auxiliar o gerenciamento de seus clientes.
+# Personal Guide
+Personal Guide oferece serviços de suporte a personal trainers, focando em auxiliar o gerenciamento de seus clientes.
 
 ## **Justificativa do Projeto**
 
