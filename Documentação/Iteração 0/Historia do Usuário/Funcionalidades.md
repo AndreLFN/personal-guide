@@ -33,6 +33,7 @@
 
 
 ## Tabela dos alunos
+
 ### Página dos alunos
 * Registro da avaliação física dos alunos (Anamnese) “Pode ser nulo”
     * Postural
