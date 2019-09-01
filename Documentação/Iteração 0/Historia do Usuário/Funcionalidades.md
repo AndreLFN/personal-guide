@@ -33,6 +33,7 @@
 
 
 ## Tabela dos alunos
+
 ### Página dos alunos
 * Registro da avaliação física dos alunos (Anamnese) “Pode ser nulo”
     * Postural
@@ -41,7 +42,7 @@
 * Registro do histórico de atividades do aluno
 * Rastreamento de metas diárias
 * Programas de treinos
-* Biblioteca de exercícios
-        
+
+## Biblioteca de exercícios
 ## Calendário de agendamentos
 ## Listagem de pacotes 
