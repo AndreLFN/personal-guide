@@ -1,4 +1,4 @@
-##Historia de Usuário Personal Guide
+## Historia de Usuário Personal Guide
 
 No final de Domingo José foi dormir preparado para deparar-se com um dia de trabalho na segunda-feira. Quando dormia sonhou com uma plataforma voltada para personal trainer, onde lá pudesse gerenciar melhor as atividades dos seus clientes.
 
