@@ -1,6 +1,8 @@
 # Personal Guide
 Personal Guide oferece serviços de suporte a personal trainers, focando em auxiliar o gerenciamento de seus clientes.
 
+[Rode o projeto!](personalguide.herokuapp.com)
+
 ## **Justificativa do Projeto**
 
 Para a escolha do projeto, buscamos uma área prática que possibilitasse a implementação de um sistema de informação no tempo da disciplina, e que simultaneamente não fosse trivial. Criar um sistema que auxilia os processos de um personal trainer nos proporciona aprender a lidar com problemas de negócio especificos que não conheciamos antes do começo do projeto; algo que será esperado de nós no mercado.
