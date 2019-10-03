@@ -169,7 +169,7 @@
   </tr>
   <tr>
     <td>3</td>
-    <td>02/00/2019</td>
+    <td>02/10/2019</td>
     <td>17:00 - 18:30</td>
     <td>Online - Whatsapp</td>
   </tr>

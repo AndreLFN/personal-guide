@@ -82,6 +82,10 @@ Atualizar documento de atividades</td>
     <td>Janiel</td>
   </tr>
   <tr>
+    <td>Postmortem</td>
+    <td>Mauro</td>
+  </tr>
+  <tr>
     <td>Foram estabelecidas algumas ferramentas que serão utilizadas no decorrer do projeto, para a comunicação por voz foi escolhido o Discord e para a comunicação por texto o whatsapp. Na criação de documentos será utilizado o Markdown para o seu compartilhamento será usado o Google Drive. Para a criação de protótipos Balsamiq. Por fim, faremos uso do Github como repositório do projeto.</td>
     <td>Equipe</td>
   </tr>

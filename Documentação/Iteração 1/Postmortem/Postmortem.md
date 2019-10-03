@@ -56,35 +56,48 @@ Este documento tem o objetivo de registrar as lições aprendidas na iteração 
     <td>Responsável</td>
   </tr>
   <tr>
-    <td></td>
+    <td>Integração com o Heroku e Posthres</td>
     <td>Tarcísio</td>
   </tr>
   <tr>
-    <td></td>
+    <td>Postmortem e início das Telas de Listagem de pacotes e Tela de Listagem de Alunos, cadstro e remoção em React</td>
     <td>Izabella</td>
   </tr>
   <tr>
-    <td></td>
+    <td>QGM</td>
     <td>Matheus</td>
   </tr>
   <tr>
-    <td></td>
+    <td>Tela de Listagem de pacotes, Tela de Listagem de Alunos, cadastro e remoção e Tela de Login</td>
     <td>André</td>
   </tr>
   <tr>
-    <td></td>
+    <td>Ata de reunião e início da Tela de Login em React</td>
     <td>Janiel</td>
   </tr>
   <tr>
-    <td></td>
-    <td>Equipe</td>
+    <td>Atualização das HUs</td>
+    <td>Mauro</td>
   </tr>
 </table>
 
 
 ### **O que não foi feito**
 
+* Frontend em React
 
 ### **Lições aprendidas**
 
-* 
+* Ter uma melhor gestão da equipe
+* Melhorar o uso de métodos ágeis
+* Ter um melhor controle das atividades e datas a serem entregues
+* Fazer mais reuniões de controle
+
+### **Fazer na próxima iteração**
+
+* Transição do frontend em React
+* Definir datas de reuniões
+* Melhor cobertura de testes
+* Continuação do desenvolvimento
+* Criação de Testes da iteração 2
+* Postmortem da iteração 2
