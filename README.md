@@ -1,7 +1,7 @@
 # Personal Guide
 Personal Guide oferece serviços de suporte a personal trainers, focando em auxiliar o gerenciamento de seus clientes.
 
-[Rode o projeto!](personalguide.herokuapp.com)
+[Rode o projeto!](https://personalguide.herokuapp.com)
 
 ## **Justificativa do Projeto**
 
