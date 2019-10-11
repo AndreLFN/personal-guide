@@ -30,7 +30,7 @@ Este documento tem o objetivo de registrar as lições aprendidas na iteração 
     <td>Izabella</td>
   </tr>
   <tr>
-    <td>QGM</td>
+    <td>GQM</td>
     <td>Matheus</td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Este documento tem o objetivo de registrar as lições aprendidas na iteração 
     <td>Izabella</td>
   </tr>
   <tr>
-    <td>QGM</td>
+    <td>GQM</td>
     <td>Matheus</td>
   </tr>
   <tr>
