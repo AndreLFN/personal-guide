@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'omniauth-github'
 
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails', '~> 4.3.5'
