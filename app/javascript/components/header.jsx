@@ -16,6 +16,11 @@ export default () => (
           className="btn btn-lg custom-button"
           role="button"
         >Login</Link>
+        <Link
+          to="/singup/"
+          className="btn btn-lg custom-button"
+          role="button"
+        >Cadastro</Link>
       </div>
     </div>
   </div>
