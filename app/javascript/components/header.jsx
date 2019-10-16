@@ -12,7 +12,7 @@ export default () => (
         </p>
         <hr className="my-4" />
         <Link
-          to="/test"
+          to="/test/"
           className="btn btn-lg custom-button"
           role="button"
         >
