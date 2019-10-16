@@ -7,7 +7,7 @@ development:
   <<: *default
   database: project_development
   username: postgres
-  password: potato
+  password: potato123
 
 test:
   <<: *default
