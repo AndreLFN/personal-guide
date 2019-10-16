@@ -21,6 +21,21 @@ export default () => (
           className="btn btn-lg custom-button"
           role="button"
         >Cadastro</Link>
+        <Link
+          to="/alunos/"
+          className="btn btn-lg custom-button"
+          role="button"
+        >Alunos</Link>
+        <Link
+          to="/logado/"
+          className="btn btn-lg custom-button"
+          role="button"
+        >Planos</Link>
+        <Link
+          to="/album/"
+          className="btn btn-lg custom-button"
+          role="button"
+        >exercicíos</Link>
       </div>
     </div>
   </div>
