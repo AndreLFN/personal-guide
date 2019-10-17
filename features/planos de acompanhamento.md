@@ -1,10 +1,10 @@
 Feature: Planos de acompanhamento
 
- Como usuário do personal guide
+Como usuário do personal guide
 
-gostaria de inserir/remover instruções sobre os exercícios que indico para meus alunos
+gostaria que meus alunos tivessem acesso aos planos de acompanhamento que ofereço,
 
-para sanar dúvidas deles.
+a fim de ajudá-los a tomar uma melhor decisão.
 
 Scenario: Adicionar novo plano de acompanhamento
 
@@ -38,7 +38,7 @@ Scenário: adicionar planos com o mesmo nome
 
       	Given estou na tela de ‘planos de acompanhamento’
 
-      	when pressiono ‘adicionar 
+      	when pressiono ‘adicionar’
 
 and preencho os campos de ‘nome do plano’ com um nome já existente
 
