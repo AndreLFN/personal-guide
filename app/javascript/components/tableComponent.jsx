@@ -151,7 +151,5 @@ export default function MaterialTableDemo() {
             })
         }}
       />
-      );
     </React.Fragment>
-  );
-}
+  )};
