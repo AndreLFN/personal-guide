@@ -1,7 +1,7 @@
 # Personal Guide
 Personal Guide oferece serviços de suporte a personal trainers, focando em auxiliar o gerenciamento de seus clientes.
 
-[Rode o projeto!](https://personalguide.herokuapp.com)
+[Home](/README.md) | [Justificativa do Projeto](#justificativa-do-projeto) |  [Integrantes](#funções-primárias-dos-integrantes) | [Desenvolvimento](#processo-de-desenvolvimento) | [Controle de Versão](#controle-de-versão) | [Scrum Planning](https://docs.google.com/spreadsheets/d/1WSHmtcZNOHl4M6KKJOpABUKq3D_1Bl3VeWNXesiZFKo/edit?usp=sharing) | [Rode o projeto!](https://personalguide.herokuapp.com)
 
 ## **Justificativa do Projeto**
 
