@@ -158,7 +158,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View
+                      View???
                     </Button>
                     <Button size="small" color="primary">
                       Edit

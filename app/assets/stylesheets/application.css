@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ .divcontainer {
+    overflow:hidden;
+    width: 400px;
+    height: 300px;
+}
+
+.divcontainer img {
+    height:300px;
+    margin-left:+25%;
+}
