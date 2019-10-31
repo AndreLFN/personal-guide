@@ -68,6 +68,7 @@ development:
     overlay: true
     compress: true
     disable_host_check: true
+    webpack_compile_output: true
     use_local_ip: false
     quiet: false
     headers:

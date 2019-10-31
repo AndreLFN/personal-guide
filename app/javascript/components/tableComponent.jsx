@@ -49,25 +49,41 @@ export default function MaterialTableDemo() {
     columns: [
       { title: "Name", field: "name" },
       { title: "CPF", field: "CPF", type: "numeric" },
-      { title: "Idade", field: "Idade", type: "numeric" }
+      { title: "Idade", field: "Idade", type: "numeric" },
+      { title: "Altura", field: "Altura", type: "numeric" },
+      { title: "Peso", field: "Peso", type: "numeric" },
+      { title: "Massa corporal", field: "Massa_corporal", type: "numeric" },
+      { title: "Pago", field: "Pagamento", type: "string" }
     ],
     data: [
       {
         name: "Seninha",
         CPF: "11111111111",
-        Idade: 20
+        Idade: 20,
+        Altura: 1.50,
+        Peso: 55,
+        Massa_corporal: 1.5,
+        Pagamento: "Sim"
       },
       {
         name: "Igor",
         CPF: "22222222222",
-        Idade: 20
+        Idade: 20,
+        Altura: 1.50,
+        Peso: 55,
+        Massa_corporal: 1.5,
+        Pagamento: "Não"
       },
 
       {
         name: "Iza",
         CPF: "33333333333",
-        Idade: 18
-      }
+        Idade: 18,
+        Altura: 1.50,
+        Peso: 55,
+        Massa_corporal: 1.5,
+        Pagamento: "Sim"
+      },
     ]
   });
 
