@@ -12,27 +12,27 @@ export default () => (
           Sobre nós
         </Link>
         <Link
-          to="/singin/"
+          to="/singin"
           className="btn btn-lg custom-button"
           role="button"
         >Login</Link>
         <Link
-          to="/singup/"
+          to="/singup"
           className="btn btn-lg custom-button"
           role="button"
         >Cadastro</Link>
         <Link
-          to="/alunos/"
+          to="/alunos"
           className="btn btn-lg custom-button"
           role="button"
         >Alunos</Link>
         <Link
-          to="/logado/"
+          to="/logado"
           className="btn btn-lg custom-button"
           role="button"
         >Planos</Link>
         <Link
-          to="/album/"
+          to="/album"
           className="btn btn-lg custom-button"
           role="button"
         >Exercicíos</Link>
