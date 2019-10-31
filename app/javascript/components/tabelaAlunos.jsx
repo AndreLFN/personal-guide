@@ -13,10 +13,9 @@ export default class tabelaAlunos extends Component {
           to="/"
           className="btn btn-lg custom-button"
           role="button"
-        >
-          Voltar
-        </Link>
+        >Voltar</Link>
       </div>
     )
   }
+  
 }
