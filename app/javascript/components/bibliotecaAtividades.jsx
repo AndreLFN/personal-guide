@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
+import ExercicioCard from "./exercicioCard";
 
 function Copyright() {
   return (
@@ -67,12 +68,6 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexDirection: "column"
   },
-  cardMedia: {
-    paddingTop: "56.25%" // 16:9
-  },
-  cardContent: {
-    flexGrow: 1
-  },
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6)
@@ -83,10 +78,12 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 export default function Album() {
   const classes = useStyles();
+
+  function createNewCard() {
+    
+  }
 
   return (
     <React.Fragment>
@@ -139,34 +136,9 @@ export default function Album() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View???
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+            <ExercicioCard title="Card 1" description="Eu sou um card" image="https://source.unsplash.com/random"/>
+            <ExercicioCard title="Card 2" description="Eu sou um card 2" image="https://source.unsplash.com/random"/>
+            <Button onClick={createNewCard}>Criar novo Card</Button>
           </Grid>
         </Container>
       </main>
