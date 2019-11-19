@@ -4,7 +4,9 @@ import Grid from "@material-ui/core/Grid"
 import {Link} from "react-router-dom"
 
 
-export default class tabelaAlunos extends Component {
+class tabelaAlunos extends Component {  
+  
+  
   render() {
     return (
       <div className='container'>
@@ -19,3 +21,4 @@ export default class tabelaAlunos extends Component {
   }
   
 }
+export default tabelaAlunos

@@ -1,0 +1,77 @@
+<%= form_with(model: avaliacoes_fisica, local: true) do |form| %>
+  <% if avaliacoes_fisica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(avaliacoes_fisica.errors.count, "error") %> prohibited this avaliacoes_fisica from being saved:</h2>
+
+      <ul>
+        <% avaliacoes_fisica.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cintura %>
+    <%= form.text_field :cintura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :envergadura %>
+    <%= form.text_field :envergadura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peitoral %>
+    <%= form.text_field :peitoral %>
+  </div>
+
+  <div class="field">
+    <%= form.label :braco %>
+    <%= form.text_field :braco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coxa %>
+    <%= form.text_field :coxa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gordura_abdomem %>
+    <%= form.text_field :gordura_abdomem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gordura_braco %>
+    <%= form.text_field :gordura_braco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gordura_coxa %>
+    <%= form.text_field :gordura_coxa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flexao %>
+    <%= form.text_field :flexao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agachamento %>
+    <%= form.text_field :agachamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :abdominal %>
+    <%= form.text_field :abdominal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :corrida %>
+    <%= form.text_field :corrida %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

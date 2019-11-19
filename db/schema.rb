@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_03_020114) do
+ActiveRecord::Schema.define(version: 2019_11_18_185843) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,37 @@ ActiveRecord::Schema.define(version: 2019_10_03_020114) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "avaliacoes_fisicas", force: :cascade do |t|
+    t.integer "aluno_id"
+    t.decimal "cintura"
+    t.decimal "envergadura"
+    t.decimal "peitoral"
+    t.decimal "braco"
+    t.decimal "coxa"
+    t.decimal "gordura_abdomem"
+    t.decimal "gordura_braco"
+    t.decimal "gordura_coxa"
+    t.decimal "flexao"
+    t.decimal "agachamento"
+    t.decimal "abdominal"
+    t.decimal "corrida"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "exercicios", force: :cascade do |t|
+    t.string "nome"
+    t.text "descricao"
+    t.string "imagem"
+    t.integer "qtd"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
+    t.string "nome", default: "", null: false
+    t.string "sobrenome", default: "", null: false
+    t.string "imagem", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -40,4 +70,5 @@ ActiveRecord::Schema.define(version: 2019_10_03_020114) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "avaliacoes_fisicas", "alunos", on_delete: :cascade
 end

@@ -1,0 +1,2 @@
+class AvaliacoesFisica < ApplicationRecord
+end

@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'cc6a356577bc6df0b3765eaf09997b32f07b8dd5d86ac4347ec17f66eb75f1778d52ab7ff0777e915955c720a8622f062c118ef43f98833a7b1638d97f1bd464'
+  # config.secret_key = '47ee1b15164bc86909af3394f0cbf76e230accb25894c53d7b2e55754d92acda4a830611df87c93d501a8941ba12ddd2c4526e6270d45ea698aaa3fd4e502c22'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -114,7 +114,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'ba6e91ac659933a686b059561bac628e200b73db4a15e34f8498796e366982b2a7274aabb8184d82ac6c2dfac2e2796e887e807d1bc836a879fffa40796f5b75'
+  # config.pepper = '0713aacc54e7cd1fa21bea5822ae899865cd8ddfc4faae515ddc4b0cbf87aa5802bbce8681697b7d247a5315df405f2bfab8deb894ae4b6f2372a60993429430'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -259,7 +259,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :github, ENV['GITHUB_ID'], ENV['GITHUB_SECRET'], scope: 'user:email'
+  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -296,5 +296,4 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
-  config.omniauth :facebook, "2088288391480614"  , "f0d32f0d17d5fc93536c306309ad244b", callback_url: "http://personalguide.herokuapp.com/users/auth/facebook/callback"
 end
