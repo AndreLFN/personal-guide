@@ -6,6 +6,7 @@ class CreateAlunos < ActiveRecord::Migration[6.0]
       t.decimal :peso
       t.string :objetivo
 
+
       t.timestamps
     end
   end

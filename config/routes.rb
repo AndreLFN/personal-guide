@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  get 'alunos/index'
-  post 'alunos/create'
-  get 'alunos/show/:id', to: 'alunos#show'
-  delete 'alunos/destroy/:id', to: 'alunos#destroy'
 
   root 'homepage#index'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
-  get '*request', to: 'homepage#index'  # Reroutes all the other routes to react
+  get '*request', to: 'homepage#index', constraints: lambda { |request| not request.original_fullpath.start_with? '/api' }  # Reroutes all the other routes to react
+
+  scope :api do
+    resources :avaliacoes_fisicas
+    resources :usuarios
+    resources :exercicios
+    resources :alunos
+  
+  end
 end
 
