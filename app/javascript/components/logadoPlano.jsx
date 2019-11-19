@@ -10,7 +10,6 @@ import Grid from "@material-ui/core/Grid";
 import StarIcon from "@material-ui/icons/StarBorder";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
@@ -22,6 +21,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Checkbox from "@material-ui/core/Checkbox";
 import IconButton from "@material-ui/core/IconButton";
 import CommentIcon from "@material-ui/icons/Comment";
+import {Link} from "react-router-dom";
+
 
 function Copyright() {
   return (
@@ -40,12 +41,14 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
     maxWidth: 360,
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background.paper,
+    fontSize: 20
   },
 
   "@global": {
     body: {
-      backgroundColor: theme.palette.common.white
+      backgroundColor: theme.palette.common.white,
+      /*zoom: 1.2*/
     },
     ul: {
       margin: 0,
@@ -105,22 +108,22 @@ const tiers = [
   {
     title: "Plano Básico",
     price: "0",
-    description: [""],
-    buttonText: "R$ 5,00/Mês",
+    description: ['Listagem de Alunos', 'Calendário', 'Exercícios', '-', '-', '-'],
+    buttonText: "R$ 30,00/Mês",
     buttonVariant: "outlined"
   },
   {
     title: "Plano Intermediário",
     price: "15",
-    description: [""],
-    buttonText: "R$ 30,00/Mês",
+    description: ['Listagem de Alunos', 'Calendário', 'Exercícios', 'Registro das Atividades Físicas', 'Metas', '-'],
+    buttonText: "R$ 50,00/Mês",
     buttonVariant: "outlined"
   },
   {
     title: "Plano Avançado",
     price: "30",
-    description: [""],
-    buttonText: "R$ 70,00/Mês",
+    description: ['Listagem de Alunos', 'Calendário', 'Exercícios', 'Registro das Atividades Físicas', 'Metas', 'Tela do Aluno'],
+    buttonText: "R$ 100,00/Mês",
     buttonVariant: "outlined"
   }
 ];
@@ -246,45 +249,7 @@ export default function Pricing() {
                 />
                 <CardContent>
                   <List className={classes.root}>
-                    {[0, 1, 2, 3].map(value => {
-                      const labelId = `checkbox-list-label-${value}`;
-
-                      return (
-                        <ListItem
-                          key={value}
-                          role={undefined}
-                          dense
-                          button
-                          onClick={handleToggle(value)}
-                        >
-                          <ListItemIcon>
-                            <Checkbox
-                              disabled
-                              checked
-                              value="checkedE"
-                              inputProps={{
-                                "aria-label": "disabled checked checkbox"
-                              }}
-                              /*<Checkbox
-        disabled
-        value="checkedD"
-        inputProps={{
-          'aria-label': 'disabled checkbox',
-        }}*/
-                            />
-                          </ListItemIcon>
-                          <ListItemText
-                            id={labelId}
-                            primary={`Line item ${value + 1}`}
-                          />
-                          <ListItemSecondaryAction>
-                            <IconButton edge="end" aria-label="comments">
-                              <CommentIcon />
-                            </IconButton>
-                          </ListItemSecondaryAction>
-                        </ListItem>
-                      );
-                    })}
+                    
                   </List>
 
                   <ul>
@@ -313,6 +278,9 @@ export default function Pricing() {
             </Grid>
           ))}
         </Grid>
+        <Link to="/" className="btn btn-lg custom-button" role="button">
+            Voltar
+        </Link>
       </Container>
     </React.Fragment>
   );
