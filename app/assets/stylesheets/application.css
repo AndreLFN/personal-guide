@@ -14,13 +14,21 @@
  *= require_self
  */
 
- .divcontainer {
-    overflow:hidden;
-    width: 400px;
+.divcontainer {
+    overflow: hidden;
+    width: '100%';
     height: 300px;
 }
 
 .divcontainer img {
-    height:300px;
-    margin-left:+25%;
+    height: 300px;
+}
+
+.btn:hover {
+    background-color: #ebe7dd;
+}
+
+a:hover {
+    background-color: transparent;
+    color: inherit;
 }

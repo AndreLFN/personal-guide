@@ -8,7 +8,6 @@ class Aluno extends React.Component {
 
     this.addHtmlEntities = this.addHtmlEntities.bind(this);
   }
-
   componentDidMount() {
     const {
       match: {

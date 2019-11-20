@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
-    fontSize: 20
+    // fontSize: 20
   },
 
   "@global": {
@@ -58,6 +58,7 @@ const useStyles = makeStyles(theme => ({
       listStyle: "none"
     }
   },
+
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
     margin: "auto"

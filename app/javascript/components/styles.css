@@ -2,3 +2,8 @@
     margin: 100px;
     ;
 }
+
+.btn:hover {
+    background-color: transparent;
+    color: #ebe7dd;
+}
