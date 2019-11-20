@@ -54,7 +54,7 @@ class MaterialTableDemo extends Component {
       columns: [
         { title: "Name", field: "nome" },
         // { title: "CPF", field: "CPF", type: "numeric" },
-        // { title: "Idade", field: "Idade", type: "numeric" },
+        { title: "Idade", field: "idade", type: "numeric" },
         { title: "Altura", field: "altura", type: "numeric" },
         { title: "Peso", field: "peso", type: "numeric" },
         { title: "Objetivo", field: "objetivo"},
@@ -110,7 +110,7 @@ class MaterialTableDemo extends Component {
       .then(function(response) {
         if (response.ok) {
           const data = [...this.state.data];
-          data.splice(data.indexOf(oldData), 1);
+          data.splice(data.indexOf(oldData), 1,newData);
           return this.setState({ ...this.state, data });
         }
         throw new Error("Network response was not ok.");
@@ -130,7 +130,7 @@ class MaterialTableDemo extends Component {
       .then(function(response) {
         if (response.ok) {
           const data = [...this.state.data];
-          data.splice(data.indexOf(oldData), 1);
+          data.splice(data.indexOf(oldData), 1, newData);
           return this.setState({ ...this.state, data });
         }
         throw new Error("Network response was not ok.");
@@ -197,16 +197,17 @@ class MaterialTableDemo extends Component {
                 resolve();
                 newData.altura = parseFloat(newData.altura)
                 newData.peso = parseFloat(newData.peso)
+                newData.idade = parseFloat(newData.idade)
                 this.insertAluno(newData);
               }, 600);
             }),
-          onRowUpdate: (newData, oldData) =>
+          onRowUpdate: newData =>
             new Promise(resolve => {
               setTimeout(() => {
                 resolve();
-                const data = [...this.state.data];
-                data[data.indexOf(oldData)] = newData;
-                setState({ ...state, data });
+                newData.altura = parseFloat(newData.altura)
+                newData.peso = parseFloat(newData.peso)
+                this.updateAluno(newData);
               }, 600);
             }),
           onRowDelete: oldData =>

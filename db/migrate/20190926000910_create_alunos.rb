@@ -5,6 +5,7 @@ class CreateAlunos < ActiveRecord::Migration[6.0]
       t.decimal :altura
       t.decimal :peso
       t.string :objetivo
+      t.integer :idade
 
 
       t.timestamps

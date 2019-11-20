@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :usuarios
     resources :exercicios
     resources :alunos
+    resources :eventos
   
   end
 end
