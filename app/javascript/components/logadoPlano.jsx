@@ -12,16 +12,16 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Box from "@material-ui/core/Box";
+//import Box from "@material-ui/core/Box";
 import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
-import ListItemText from "@material-ui/core/ListItemText";
-import Checkbox from "@material-ui/core/Checkbox";
-import IconButton from "@material-ui/core/IconButton";
-import CommentIcon from "@material-ui/icons/Comment";
-import {Link} from "react-router-dom";
+//import ListItem from "@material-ui/core/ListItem";
+//import ListItemIcon from "@material-ui/core/ListItemIcon";
+//import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
+//import ListItemText from "@material-ui/core/ListItemText";
+//import Checkbox from "@material-ui/core/Checkbox";
+//import IconButton from "@material-ui/core/IconButton";
+//import CommentIcon from "@material-ui/icons/Comment";
+import Link from "@material-ui/core/Link";;
 
 
 function Copyright() {
@@ -188,7 +188,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/alunos"
               className={classes.link}
             >
               Tabela de Alunos
@@ -204,7 +204,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              to="/logado"
               className={classes.link}
             >
               Listagem de Pacotes
@@ -212,7 +212,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/album"
               className={classes.link}
             >
               Biblioteca de Exercícios

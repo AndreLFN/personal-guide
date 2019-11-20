@@ -13,8 +13,6 @@
 ActiveRecord::Schema.define(version: 2019_11_20_183808) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "adminpack"
-  enable_extension "pgagent"
   enable_extension "plpgsql"
 
   create_table "alunos", force: :cascade do |t|
@@ -22,7 +20,6 @@ ActiveRecord::Schema.define(version: 2019_11_20_183808) do
     t.decimal "altura"
     t.decimal "peso"
     t.string "objetivo"
-    t.integer "idade"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -63,20 +60,7 @@ ActiveRecord::Schema.define(version: 2019_11_20_183808) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "tabela_alunos", force: :cascade do |t|
-    t.string "nome"
-    t.text "altura"
-    t.text "peso"
-    t.string "objetivo"
-    t.integer "cpf"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", force: :cascade do |t|
-    t.string "nome", default: "", null: false
-    t.string "sobrenome", default: "", null: false
-    t.string "imagem", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
