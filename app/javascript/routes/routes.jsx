@@ -13,6 +13,7 @@ import Alunos from "../components/tabelaAlunos";
 import Aluno from "../components/Aluno";
 import NovoAluno from "../components/NovoAluno";
 import { createMuiTheme } from '@material-ui/core/styles';
+import Calendar from "../components/calendario"
 
 const theme = createMuiTheme();
 
@@ -32,6 +33,7 @@ export default (
       <Route path="/alunos" exact component={Alunos} />
       <Route path="/aluno/:id" exact component={Aluno} />
       <Route path="/novoaluno" exact component={NovoAluno} />
+      <Route path="/calendar" exact component={Calendar} />
     </Switch>
   </Router>
   </ThemeProvider>

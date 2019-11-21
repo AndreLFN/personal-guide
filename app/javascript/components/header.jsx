@@ -40,6 +40,11 @@ export default () => (
           className="btn btn-lg custom-button"
           role="button"
         >Exercicíos</Link>
+        <Link
+          to="/calendar"
+          className="btn btn-lg custom-button"
+          role="button"
+        >Calendario</Link>
       </div>
     </div>
   </div>
