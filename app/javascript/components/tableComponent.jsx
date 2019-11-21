@@ -162,7 +162,7 @@ class MaterialTableDemo extends Component {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/calendar"
               className={classes.link}
             >
               Calendário de Agendamentos

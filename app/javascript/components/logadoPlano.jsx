@@ -14,6 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 //import Box from "@material-ui/core/Box";
 import List from "@material-ui/core/List";
+
 //import ListItem from "@material-ui/core/ListItem";
 //import ListItemIcon from "@material-ui/core/ListItemIcon";
 //import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
@@ -196,7 +197,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/calendar"
               className={classes.link}
             >
               Calendário de Agendamentos
@@ -204,7 +205,8 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              to="/logado"
+              href="/logado"
+
               className={classes.link}
             >
               Listagem de Pacotes
