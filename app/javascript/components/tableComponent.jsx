@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
 import MaterialTable from "material-table";
-import { AddBox, ArrowUpward } from "@material-ui/icons";
+//import { AddBox, ArrowUpward } from "@material-ui/icons";
 import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
-import CameraIcon from "@material-ui/icons/PhotoCamera";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
+//import Button from "@material-ui/core/Button";
+//import CameraIcon from "@material-ui/icons/PhotoCamera";
+//import Card from "@material-ui/core/Card";
+//import CardActions from "@material-ui/core/CardActions";
+//import CardContent from "@material-ui/core/CardContent";
+//import CardMedia from "@material-ui/core/CardMedia";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Grid from "@material-ui/core/Grid";
+//import Grid from "@material-ui/core/Grid";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from '@material-ui/styles';
-import Container from "@material-ui/core/Container";
+//import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import PropTypes from 'prop-types';
-import Alunos from "./Alunos";
+//import Alunos from "./Alunos";
 
 const styles = theme => ({
 
@@ -54,7 +54,7 @@ class MaterialTableDemo extends Component {
       columns: [
         { title: "Name", field: "nome" },
         // { title: "CPF", field: "CPF", type: "numeric" },
-        // { title: "Idade", field: "Idade", type: "numeric" },
+        { title: "Idade", field: "idade", type: "numeric" },
         { title: "Altura", field: "altura", type: "numeric" },
         { title: "Peso", field: "peso", type: "numeric" },
         { title: "Objetivo", field: "objetivo"},
@@ -110,7 +110,7 @@ class MaterialTableDemo extends Component {
       .then(function(response) {
         if (response.ok) {
           const data = [...this.state.data];
-          data.splice(data.indexOf(oldData), 1);
+          data.splice(data.indexOf(oldData), 1,newData);
           return this.setState({ ...this.state, data });
         }
         throw new Error("Network response was not ok.");
@@ -130,7 +130,7 @@ class MaterialTableDemo extends Component {
       .then(function(response) {
         if (response.ok) {
           const data = [...this.state.data];
-          data.splice(data.indexOf(oldData), 1);
+          data.splice(data.indexOf(oldData), 1, newData);
           return this.setState({ ...this.state, data });
         }
         throw new Error("Network response was not ok.");
@@ -197,16 +197,17 @@ class MaterialTableDemo extends Component {
                 resolve();
                 newData.altura = parseFloat(newData.altura)
                 newData.peso = parseFloat(newData.peso)
+                newData.idade = parseFloat(newData.idade)
                 this.insertAluno(newData);
               }, 600);
             }),
-          onRowUpdate: (newData, oldData) =>
+          onRowUpdate: newData =>
             new Promise(resolve => {
               setTimeout(() => {
                 resolve();
-                const data = [...this.state.data];
-                data[data.indexOf(oldData)] = newData;
-                setState({ ...state, data });
+                newData.altura = parseFloat(newData.altura)
+                newData.peso = parseFloat(newData.peso)
+                this.updateAluno(newData);
               }, 600);
             }),
           onRowDelete: oldData =>

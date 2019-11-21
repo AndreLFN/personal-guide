@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Aluno extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { aluno: { nome: "", altura: "", peso:"", objetivo:""  } };
+    this.state = { aluno: { nome: "", altura: "", peso: "", objetivo: "" } };
 
     this.addHtmlEntities = this.addHtmlEntities.bind(this);
   }
@@ -15,7 +15,7 @@ class Aluno extends React.Component {
       }
     } = this.props;
 
-    const url = '/show/${id}';//URL DA ROTA DO RAILS
+    const url = "/show/${id}"; //URL DA ROTA DO RAILS
 
     fetch(url)
       .then(response => {
@@ -26,14 +26,12 @@ class Aluno extends React.Component {
       })
       .then(response => this.setState({ recipe: response }));
   }
-  
+
   addHtmlEntities(str) {
     return String(str)
       .replace(/&lt;/g, "<")
       .replace(/&gt;/g, ">");
   }
-
-
 
   render() {
     const { aluno } = this.state;
@@ -49,8 +47,8 @@ class Aluno extends React.Component {
         <div className="container py-5">
           <div className="row">
             <div className="col-sm-12 col-lg-3">
-                <h5 className="mb-2">Objetivo</h5>
-                {aluno.objetivo}
+              <h5 className="mb-2">Objetivo</h5>
+              {aluno.objetivo}
             </div>
             <div className="col-sm-12 col-lg-2">
               <button type="button" className="btn btn-danger">
@@ -65,7 +63,6 @@ class Aluno extends React.Component {
       </div>
     );
   }
-
 }
 
 export default Aluno;
