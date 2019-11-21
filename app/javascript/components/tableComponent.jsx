@@ -79,7 +79,7 @@ class MaterialTableDemo extends Component {
       }.bind(this));
   }
 
-  async insertAluno(newData){
+  insertAluno(newData){
     let fetchData = { 
       method: 'POST', 
       body: JSON.stringify(newData),
@@ -101,7 +101,7 @@ class MaterialTableDemo extends Component {
       }.bind(this));
   }
 
-  async deleteAluno(oldData){
+  deleteAluno(oldData){
     let fetchData = { 
       method: 'DELETE',
     }
@@ -110,14 +110,14 @@ class MaterialTableDemo extends Component {
       .then(function(response) {
         if (response.ok) {
           const data = [...this.state.data];
-          data.splice(data.indexOf(oldData), 1,newData);
+          data.splice(data.indexOf(oldData), 1);
           return this.setState({ ...this.state, data });
         }
         throw new Error("Network response was not ok.");
       }.bind(this));
   }
 
-  async updateAluno(newData){
+  updateAluno(newData){
     let fetchData = { 
       method: 'PUT', 
       body: JSON.stringify(newData),
@@ -129,11 +129,14 @@ class MaterialTableDemo extends Component {
     fetch(url, fetchData)
       .then(function(response) {
         if (response.ok) {
-          const data = [...this.state.data];
-          data.splice(data.indexOf(newData), 1, newData);
-          return this.setState({ ...this.state, data });
+          return response.json()
         }
-        throw new Error("Network response was not ok.");
+          throw new Error("Network response was not ok.");
+        }).then(function(response){
+          const data = [...this.state.data];
+          data.splice(data.indexOf(newData), 1);
+          data.push(response)
+          return this.setState({ ...this.state, data });
       }.bind(this));
   }
 
