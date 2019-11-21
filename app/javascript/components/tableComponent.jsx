@@ -130,7 +130,7 @@ class MaterialTableDemo extends Component {
       .then(function(response) {
         if (response.ok) {
           const data = [...this.state.data];
-          data.splice(data.indexOf(oldData), 1, newData);
+          data.splice(data.indexOf(newData), 1, newData);
           return this.setState({ ...this.state, data });
         }
         throw new Error("Network response was not ok.");
@@ -197,7 +197,7 @@ class MaterialTableDemo extends Component {
                 resolve();
                 newData.altura = parseFloat(newData.altura)
                 newData.peso = parseFloat(newData.peso)
-                newData.idade = parseFloat(newData.idade)
+                newData.idade = parseInt(newData.idade)
                 this.insertAluno(newData);
               }, 600);
             }),
@@ -207,8 +207,9 @@ class MaterialTableDemo extends Component {
                 resolve();
                 newData.altura = parseFloat(newData.altura)
                 newData.peso = parseFloat(newData.peso)
+                newData.idade = parseInt(newData.idade)
                 this.updateAluno(newData);
-              }, 600);
+              }, 0);
             }),
           onRowDelete: oldData =>
             new Promise(resolve => {

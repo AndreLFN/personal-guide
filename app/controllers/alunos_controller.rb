@@ -27,26 +27,31 @@ class AlunosController < ApplicationController
     render json: { message: 'Aluno deletado!' }
   end
 
+  # PATCH/PUT /alunos/1
+  # PATCH/PUT /alunos/1.json
+  def update
+    respond_to do |format|
+      @aluno = Aluno.find(params[:id])
+      if @aluno.update(aluno_params)
+        format.html { redirect_to @aluno, notice: 'Aluno was successfully updated.' }
+        format.json { render :show, status: :ok, location: @aluno }
+      else
+        format.html { render :edit }
+        format.json { render json: @aluno.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   private
 
   def aluno_params
-    params.permit(:nome, :altura, :peso, :objetivo)
+    params.permit(:nome, :altura, :peso, :objetivo, :idade)
   end
 
   def aluno
     @aluno ||= Aluno.find(params[:id])
   end
 
-  def update
-    respond_to do |format|
-      if @exercicio.update(exercicio_params)
-        format.html { redirect_to @exercicio, notice: 'Exercicio was successfully updated.' }
-        format.json { render :show, status: :ok, location: @exercicio }
-      else
-        format.html { render :edit }
-        format.json { render json: @exercicio.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  
 
 end
