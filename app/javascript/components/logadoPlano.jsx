@@ -21,7 +21,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Checkbox from "@material-ui/core/Checkbox";
 import IconButton from "@material-ui/core/IconButton";
 import CommentIcon from "@material-ui/icons/Comment";
-import {Link} from "react-router-dom";
+import Link from "@material-ui/core/Link";
 
 
 function Copyright() {
@@ -188,7 +188,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/alunos"
               className={classes.link}
             >
               Tabela de Alunos
@@ -196,7 +196,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/calendar"
               className={classes.link}
             >
               Calendário de Agendamentos
@@ -204,7 +204,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/logado"
               className={classes.link}
             >
               Listagem de Pacotes
@@ -212,7 +212,7 @@ export default function Pricing() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/album"
               className={classes.link}
             >
               Biblioteca de Exercícios

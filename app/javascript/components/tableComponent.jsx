@@ -154,7 +154,7 @@ class MaterialTableDemo extends Component {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/alunos"
               className={classes.link}
             >
               Tabela de Alunos
@@ -162,7 +162,7 @@ class MaterialTableDemo extends Component {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/calendar"
               className={classes.link}
             >
               Calendário de Agendamentos
@@ -170,7 +170,7 @@ class MaterialTableDemo extends Component {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/logado"
               className={classes.link}
             >
               Listagem de Pacotes
@@ -178,7 +178,7 @@ class MaterialTableDemo extends Component {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/album"
               className={classes.link}
             >
               Biblioteca de Exercícios

@@ -99,7 +99,7 @@ export default function Album() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/alunos"
               className={classes.link}
             >
               Tabela de Alunos
@@ -107,7 +107,7 @@ export default function Album() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/calendar"
               className={classes.link}
             >
               Calendário de Agendamentos
@@ -115,7 +115,7 @@ export default function Album() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/logado"
               className={classes.link}
             >
               Listagem de Pacotes
@@ -123,7 +123,7 @@ export default function Album() {
             <Link
               variant="button"
               color="textPrimary"
-              href="#"
+              href="/album"
               className={classes.link}
             >
               Biblioteca de Exercícios
